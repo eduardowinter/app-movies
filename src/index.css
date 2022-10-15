@@ -11,8 +11,35 @@ body {
   margin: 0;
 }
 
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #373b69;
+  display: flex;;
+  padding: 1rem;
+  justify-content: flex-end;
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid #22254b;
+  border-radius: 50px;
+  color: white;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.search:focus {
+  outline: 0;
+}
+
 .movie-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -61,4 +88,22 @@ body {
 
 .movie:hover .movie-over {
   transform: translateY(0%);
+}
+
+.tag {
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.tag.green {
+  background-color: green;
+}
+
+.tag.orange {
+  background-color: orange;
+}
+
+.tag.red {
+  background-color: red;
 }
